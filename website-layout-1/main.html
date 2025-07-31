@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<head>
+  <title>Jack May</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="font-mono">
+    <div class="text-center text-6xl py-4 font-bold">
+      <p>Jack May</p>
+    </div>
+
+    <div class="text-center text-4xl py-4 bg-black text-white font-bold">
+      <p>Portfolio of Jack May</p>
+    </div>
+
+    <!-- Navbar -->
+    <div class="py-4 px-4 bg-red-700 text-white font-bold text-2xl">
+      <ul class="flex space-x-8 justify-center">
+        <li>RESUME</li>
+        <li>ABOUT</li>
+      </ul>
+    </div>
+
+    <div class="px-4 bg-red-700 text-white text-xs">
+      <ul class="flex space-x-8 justify-center">
+        <li>Social Link 1</li>
+        <li>Social Link 2</li>
+        <li>Social Link 3</li>
+        <li>Social Link 4</li>
+      </ul>
+    </div>
+
+    <!-- Filters -->
+    <div id="tag-filter" class="flex flex-wrap justify-center gap-2 my-6">
+      <button class="tag-btn bg-gray-300 hover:bg-gray-400 px-3 py-1 rounded" data-tag="all">All</button>
+      <button class="tag-btn bg-gray-300 hover:bg-gray-400 px-3 py-1 rounded" data-tag="games">Games</button>
+      <button class="tag-btn bg-gray-300 hover:bg-gray-400 px-3 py-1 rounded" data-tag="tools">Tools</button>
+      <button class="tag-btn bg-gray-300 hover:bg-gray-400 px-3 py-1 rounded" data-tag="graphics">Graphics</button>
+    </div>
+
+    <!-- Project 1 -->
+    <div data-tags="games graphics" class="project-card max-w-4xl mx-auto my-8 border border-gray-300 rounded-lg shadow p-4">
+      <h2 class="text-2xl font-bold mb-4">Project 1</h2>
+      <div class="flex flex-wrap gap-2 text-xs text-white my-2">
+        <span class="bg-gray-600 px-2 py-1 rounded">games</span>
+        <span class="bg-gray-600 px-2 py-1 rounded">graphics</span>
+      </div>
+
+      <div class="relative mb-4">
+        <div class="media-container aspect-video bg-black rounded overflow-hidden"></div>
+        <div class="absolute inset-y-0 left-0 flex items-center">
+          <button class="prev-btn text-white bg-gray-800 bg-opacity-50 px-3 py-1 hover:bg-opacity-75">&#8592;</button>
+        </div>
+        <div class="absolute inset-y-0 right-0 flex items-center">
+          <button class="next-btn text-white bg-gray-800 bg-opacity-50 px-3 py-1 hover:bg-opacity-75">&#8594;</button>
+        </div>
+      </div>
+
+      <div class="media-data hidden">
+        <div data-type="video" data-src="https://www.youtube.com/embed/r3nG5qSRw64?si=0tmYa3HIz5NFiud6"></div>
+        <div data-type="image" data-src="sample.jpg"></div>
+        <div data-type="image" data-src="sample2.jpg"></div>
+        <div data-type="image" data-src="sample3.jpg"></div>
+      </div>
+
+      <p class="text-gray-700 mb-4">
+        A quick summary of what this project is about.
+      </p>
+
+      <button class="bg-red-700 text-white px-4 py-2 rounded hover:bg-red-600">More Info</button>
+    </div>
+
+    <!-- Project 2 -->
+    <div data-tags="tools" class="project-card max-w-4xl mx-auto my-8 border border-gray-300 rounded-lg shadow p-4">
+      <h2 class="text-2xl font-bold mb-4">Project 2</h2>
+      <div class="flex flex-wrap gap-2 text-xs text-white my-2">
+        <span class="bg-gray-600 px-2 py-1 rounded">tools</span>
+      </div>
+
+      <div class="relative mb-4">
+        <div class="media-container aspect-video bg-black rounded overflow-hidden"></div>
+        <div class="absolute inset-y-0 left-0 flex items-center">
+          <button class="prev-btn text-white bg-gray-800 bg-opacity-50 px-3 py-1 hover:bg-opacity-75">&#8592;</button>
+        </div>
+        <div class="absolute inset-y-0 right-0 flex items-center">
+          <button class="next-btn text-white bg-gray-800 bg-opacity-50 px-3 py-1 hover:bg-opacity-75">&#8594;</button>
+        </div>
+      </div>
+
+      <div class="media-data hidden">
+        <div data-type="video" data-src="https://www.youtube.com/embed/r3nG5qSRw64?si=0tmYa3HIz5NFiud6"></div>
+        <div data-type="image" data-src="sample.jpg"></div>
+        <div data-type="image" data-src="sample2.jpg"></div>
+        <div data-type="image" data-src="sample3.jpg"></div>
+      </div>
+
+      <p class="text-gray-700 mb-4">
+        A quick summary of what this project is about.
+      </p>
+
+      <button class="bg-red-700 text-white px-4 py-2 rounded hover:bg-red-600">More Info</button>
+    </div>
+  
+    <!-- Project 3 -->
+    <div data-tags="graphics" class="project-card max-w-4xl mx-auto my-8 border border-gray-300 rounded-lg shadow p-4">
+      <h2 class="text-2xl font-bold mb-4">Project 3</h2>
+      <div class="flex flex-wrap gap-2 text-xs text-white my-2">
+        <span class="bg-gray-600 px-2 py-1 rounded">graphics</span>
+      </div>
+
+      <div class="relative mb-4">
+        <div class="media-container aspect-video bg-black rounded overflow-hidden"></div>
+        <div class="absolute inset-y-0 left-0 flex items-center">
+          <button class="prev-btn text-white bg-gray-800 bg-opacity-50 px-3 py-1 hover:bg-opacity-75">&#8592;</button>
+        </div>
+        <div class="absolute inset-y-0 right-0 flex items-center">
+          <button class="next-btn text-white bg-gray-800 700bg-opacity-50 px-3 py-1 hover:bg-opacity-75">&#8594;</button>
+        </div>
+      </div>
+
+      <div class="media-data hidden">
+        <div data-type="video" data-src="https://www.youtube.com/embed/r3nG5qSRw64?si=0tmYa3HIz5NFiud6"></div>
+        <div data-type="image" data-src="sample.jpg"></div>
+        <div data-type="image" data-src="sample2.jpg"></div>
+        <div data-type="image" data-src="sample3.jpg"></div>
+      </div>
+
+      <p class="text-gray-700 mb-4">
+        A quick summary of what this project is about.
+      </p>
+
+      <button class="bg-red-700 text-white px-4 py-2 rounded hover:bg-red-600">More Info</button>
+    </div>
+</body>
+
+<!-- Slideshow Elements -->
+<script>
+  document.querySelectorAll('.project-card').forEach(card => {
+    const container = card.querySelector('.media-container');
+    const mediaItems = Array.from(card.querySelectorAll('.media-data > div')).map(el => ({
+      type: el.dataset.type,
+      src: el.dataset.src
+    }));
+
+    let index = 0;
+
+    const render = () => {
+      container.innerHTML = '';
+
+      const media = mediaItems[index];
+
+      if (media.type === 'image') {
+        const img = document.createElement('img');
+        img.src = media.src;
+        img.alt = '';
+        img.className = 'w-full h-full object-cover';
+        container.appendChild(img);
+      } else if (media.type === 'video') {
+        const iframe = document.createElement('iframe');
+        iframe.src = media.src;
+        iframe.className = 'w-full h-full';
+        iframe.frameBorder = '0';
+        iframe.allowFullscreen = true;
+        container.appendChild(iframe);
+      }
+    };
+
+    card.querySelector('.prev-btn').addEventListener('click', () => {
+      index = (index - 1 + mediaItems.length) % mediaItems.length;
+      render();
+    });
+
+    card.querySelector('.next-btn').addEventListener('click', () => {
+      index = (index + 1) % mediaItems.length;
+      render();
+    });
+
+    render(); 
+  });
+</script>
+
+<!-- Filter functionality -->
+<script>
+  const tagButtons = document.querySelectorAll('.tag-btn');
+  const projectCards = document.querySelectorAll('.project-card');
+
+  tagButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const selected = btn.dataset.tag;
+
+      projectCards.forEach(card => {
+        const tags = card.dataset.tags.split(' ');
+        const show = selected === 'all' || tags.includes(selected);
+        card.style.display = show ? '' : 'none';
+      });
+
+      tagButtons.forEach(b => b.classList.remove('bg-blue-500', 'text-white'));
+      btn.classList.add('bg-blue-500', 'text-white');
+    });
+  });
+</script>
